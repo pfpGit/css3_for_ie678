@@ -7,17 +7,37 @@
     <script src="plugin/html5shiv/html5shiv.min.js"></script>
     <script src="plugin/pie/PIE.js"></script>
     <![endif]-->
-    <script src="plugin/prefixfree/prefixfree.min.js"></script>
+    <!--<script src="plugin/prefixfree/prefixfree.min.js"></script>-->
     <title>在lt ie9上使用css3属性</title>
     <style type="text/css">
     	.radius{margin-top: 20px;padding:10px;border-radius:8px;border:2px solid pink;behavior: url(plugin/pie/PIE.htc);}
-    	.animate{padding:20px;display: inline-block;background:linear-gradient(pink,blue);color:white;-pie-background: linear-gradient(red,blue 70%); behavior: url(plugin/pie/PIE.htc);margin-top: 20px;}
+    	.animate{padding:20px;
+    	display: inline-block;
+    	background:linear-gradient(pink,blue);
+    	color:white;
+      pie-background: linear-gradient(red,blue 70%); 
+      behavior: url(plugin/pie/PIE.htc);
+      margin-top: 20px;
+      }
+      .rotate{display: inline-block;height: 100px;line-height: 100px;width: 100px;font-size: 24px;background:pink;margin-top: 20px;color:white;vertical-align: middle;text-align: center;}
+      .shaDown{
+      	display: inline-block;
+      	width: 200px;
+      	height: 200px;
+      	line-height: 200px;
+      	text-align: center;
+      	border-radius: 200px;
+      	box-shadow: 5px 0 4px lightblue,0 5px 4px darkmagenta;
+      	margin-top: 20px;
+      }
     </style>
   </head>
 
   <body>
   <header>这是头部哦html5shiv支持</header>
   <div class="radius">圆角pie.js和pie.htc支持</div>
-  <span class="animate">不需要厂商前缀支持prefixfree</div>
+  <span class="animate">不需要厂商前缀支持prefixfree</span><br />
+  <span class="rotate">转</span><br />
+  <span class="shaDown">阴影</span>
   </body>
 </html>
